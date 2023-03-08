@@ -1,0 +1,20 @@
+spring:
+  cloud:
+    stream:
+      bindings:
+        vehicle-input-channel:
+          destination: input-vehicle-info
+        vehicle-output-channel:
+          destination: output-vehicle-info
+      kafka:
+        streams:
+          binder:
+             brokers: localhost:9092
+             configuration:
+               commit:
+                 interval:
+                   ms: 1000
+   
+    
+        
+

@@ -1,0 +1,604 @@
+[2023-03-02 18:01:05,810] INFO [GroupCoordinator 0]: Dynamic member with unknown member id joins group drvn-application-id in Empty state. Created a new member id drvn-application-id-a4267ab7-b4f8-44a6-826f-5161377eee14-StreamThread-1-consumer-c449d176-0dac-4842-97c5-ca964a470bd5 and request the member to rejoin with this id. (kafka.coordinator.group.GroupCoordinator)
+[2023-03-02 18:01:05,815] INFO [GroupCoordinator 0]: Preparing to rebalance group drvn-application-id in state PreparingRebalance with old generation 2 (__consumer_offsets-11) (reason: Adding new member drvn-application-id-a4267ab7-b4f8-44a6-826f-5161377eee14-StreamThread-1-consumer-c449d176-0dac-4842-97c5-ca964a470bd5 with group instance id None; client reason: rebalance failed due to MemberIdRequiredException) (kafka.coordinator.group.GroupCoordinator)
+[2023-03-02 18:01:05,815] INFO [GroupCoordinator 0]: Stabilized group drvn-application-id generation 3 (__consumer_offsets-11) with 1 members (kafka.coordinator.group.GroupCoordinator)
+[2023-03-02 18:01:05,913] INFO [GroupCoordinator 0]: Assignment received from leader drvn-application-id-a4267ab7-b4f8-44a6-826f-5161377eee14-StreamThread-1-consumer-c449d176-0dac-4842-97c5-ca964a470bd5 for group drvn-application-id for generation 3. The group has 1 members, 0 of which are static. (kafka.coordinator.group.GroupCoordinator)
+[2023-03-02 18:01:05,928] INFO [GroupCoordinator 0]: Preparing to rebalance group drvn-application-id in state PreparingRebalance with old generation 3 (__consumer_offsets-11) (reason: Removing member drvn-application-id-a4267ab7-b4f8-44a6-826f-5161377eee14-StreamThread-1-consumer-c449d176-0dac-4842-97c5-ca964a470bd5 on LeaveGroup; client reason: the consumer unsubscribed from all topics) (kafka.coordinator.group.GroupCoordinator)
+[2023-03-02 18:01:05,928] INFO [GroupCoordinator 0]: Group drvn-application-id with generation 4 is now empty (__consumer_offsets-11) (kafka.coordinator.group.GroupCoordinator)
+[2023-03-02 18:01:05,933] INFO [GroupCoordinator 0]: Member MemberMetadata(memberId=drvn-application-id-a4267ab7-b4f8-44a6-826f-5161377eee14-StreamThread-1-consumer-c449d176-0dac-4842-97c5-ca964a470bd5, groupInstanceId=None, clientId=drvn-application-id-a4267ab7-b4f8-44a6-826f-5161377eee14-StreamThread-1-consumer, clientHost=/127.0.0.1, sessionTimeoutMs=45000, rebalanceTimeoutMs=300000, supportedProtocols=List(stream)) has left group drvn-application-id through explicit `LeaveGroup`; client reason: the consumer unsubscribed from all topics (kafka.coordinator.group.GroupCoordinator)
+[2023-03-02 18:03:21,639] INFO Registered kafka:type=kafka.Log4jController MBean (kafka.utils.Log4jControllerRegistration$)
+[2023-03-02 18:03:21,912] INFO Setting -D jdk.tls.rejectClientInitiatedRenegotiation=true to disable client-initiated TLS renegotiation (org.apache.zookeeper.common.X509Util)
+[2023-03-02 18:03:21,997] INFO Registered signal handlers for TERM, INT, HUP (org.apache.kafka.common.utils.LoggingSignalHandler)
+[2023-03-02 18:03:21,999] INFO starting (kafka.server.KafkaServer)
+[2023-03-02 18:03:21,999] INFO Connecting to zookeeper on localhost:2181 (kafka.server.KafkaServer)
+[2023-03-02 18:03:22,017] INFO [ZooKeeperClient Kafka server] Initializing a new session to localhost:2181. (kafka.zookeeper.ZooKeeperClient)
+[2023-03-02 18:03:22,097] INFO Client environment:zookeeper.version=3.6.3--6401e4ad2087061bc6b9f80dec2d69f2e3c8660a, built on 04/08/2021 16:35 GMT (org.apache.zookeeper.ZooKeeper)
+[2023-03-02 18:03:22,097] INFO Client environment:host.name=192.168.100.19 (org.apache.zookeeper.ZooKeeper)
+[2023-03-02 18:03:22,097] INFO Client environment:java.version=11.0.14 (org.apache.zookeeper.ZooKeeper)
+[2023-03-02 18:03:22,097] INFO Client environment:java.vendor=Oracle Corporation (org.apache.zookeeper.ZooKeeper)
+[2023-03-02 18:03:22,097] INFO Client environment:java.home=/Library/Java/JavaVirtualMachines/jdk-11.0.14.jdk/Contents/Home (org.apache.zookeeper.ZooKeeper)
+[2023-03-02 18:03:22,097] INFO Client environment:java.class.path=/Users/Florin.Drilea/Personal-Projects/DRVN-SOLUTIONS/kafka_2.13-3.3.2/bin/../libs/activation-1.1.1.jar:/Users/Florin.Drilea/Personal-Projects/DRVN-SOLUTIONS/kafka_2.13-3.3.2/bin/../libs/aopalliance-repackaged-2.6.1.jar:/Users/Florin.Drilea/Personal-Projects/DRVN-SOLUTIONS/kafka_2.13-3.3.2/bin/../libs/argparse4j-0.7.0.jar:/Users/Florin.Drilea/Personal-Projects/DRVN-SOLUTIONS/kafka_2.13-3.3.2/bin/../libs/audience-annotations-0.5.0.jar:/Users/Florin.Drilea/Personal-Projects/DRVN-SOLUTIONS/kafka_2.13-3.3.2/bin/../libs/commons-cli-1.4.jar:/Users/Florin.Drilea/Personal-Projects/DRVN-SOLUTIONS/kafka_2.13-3.3.2/bin/../libs/commons-lang3-3.12.0.jar:/Users/Florin.Drilea/Personal-Projects/DRVN-SOLUTIONS/kafka_2.13-3.3.2/bin/../libs/commons-lang3-3.8.1.jar:/Users/Florin.Drilea/Personal-Projects/DRVN-SOLUTIONS/kafka_2.13-3.3.2/bin/../libs/connect-api-3.3.2.jar:/Users/Florin.Drilea/Personal-Projects/DRVN-SOLUTIONS/kafka_2.13-3.3.2/bin/../libs/connect-basic-auth-extension-3.3.2.jar:/Users/Florin.Drilea/Personal-Projects/DRVN-SOLUTIONS/kafka_2.13-3.3.2/bin/../libs/connect-json-3.3.2.jar:/Users/Florin.Drilea/Personal-Projects/DRVN-SOLUTIONS/kafka_2.13-3.3.2/bin/../libs/connect-mirror-3.3.2.jar:/Users/Florin.Drilea/Personal-Projects/DRVN-SOLUTIONS/kafka_2.13-3.3.2/bin/../libs/connect-mirror-client-3.3.2.jar:/Users/Florin.Drilea/Personal-Projects/DRVN-SOLUTIONS/kafka_2.13-3.3.2/bin/../libs/connect-runtime-3.3.2.jar:/Users/Florin.Drilea/Personal-Projects/DRVN-SOLUTIONS/kafka_2.13-3.3.2/bin/../libs/connect-transforms-3.3.2.jar:/Users/Florin.Drilea/Personal-Projects/DRVN-SOLUTIONS/kafka_2.13-3.3.2/bin/../libs/hk2-api-2.6.1.jar:/Users/Florin.Drilea/Personal-Projects/DRVN-SOLUTIONS/kafka_2.13-3.3.2/bin/../libs/hk2-locator-2.6.1.jar:/Users/Florin.Drilea/Personal-Projects/DRVN-SOLUTIONS/kafka_2.13-3.3.2/bin/../libs/hk2-utils-2.6.1.jar:/Users/Florin.Drilea/Personal-Projects/DRVN-SOLUTIONS/kafka_2.13-3.3.2/bin/../libs/jackson-annotations-2.13.4.jar:/Users/Florin.Drilea/Personal-Projects/DRVN-SOLUTIONS/kafka_2.13-3.3.2/bin/../libs/jackson-core-2.13.4.jar:/Users/Florin.Drilea/Personal-Projects/DRVN-SOLUTIONS/kafka_2.13-3.3.2/bin/../libs/jackson-databind-2.13.4.2.jar:/Users/Florin.Drilea/Personal-Projects/DRVN-SOLUTIONS/kafka_2.13-3.3.2/bin/../libs/jackson-dataformat-csv-2.13.4.jar:/Users/Florin.Drilea/Personal-Projects/DRVN-SOLUTIONS/kafka_2.13-3.3.2/bin/../libs/jackson-datatype-jdk8-2.13.4.jar:/Users/Florin.Drilea/Personal-Projects/DRVN-SOLUTIONS/kafka_2.13-3.3.2/bin/../libs/jackson-jaxrs-base-2.13.4.jar:/Users/Florin.Drilea/Personal-Projects/DRVN-SOLUTIONS/kafka_2.13-3.3.2/bin/../libs/jackson-jaxrs-json-provider-2.13.4.jar:/Users/Florin.Drilea/Personal-Projects/DRVN-SOLUTIONS/kafka_2.13-3.3.2/bin/../libs/jackson-module-jaxb-annotations-2.13.4.jar:/Users/Florin.Drilea/Personal-Projects/DRVN-SOLUTIONS/kafka_2.13-3.3.2/bin/../libs/jackson-module-scala_2.13-2.13.4.jar:/Users/Florin.Drilea/Personal-Projects/DRVN-SOLUTIONS/kafka_2.13-3.3.2/bin/../libs/jakarta.activation-api-1.2.2.jar:/Users/Florin.Drilea/Personal-Projects/DRVN-SOLUTIONS/kafka_2.13-3.3.2/bin/../libs/jakarta.annotation-api-1.3.5.jar:/Users/Florin.Drilea/Personal-Projects/DRVN-SOLUTIONS/kafka_2.13-3.3.2/bin/../libs/jakarta.inject-2.6.1.jar:/Users/Florin.Drilea/Personal-Projects/DRVN-SOLUTIONS/kafka_2.13-3.3.2/bin/../libs/jakarta.validation-api-2.0.2.jar:/Users/Florin.Drilea/Personal-Projects/DRVN-SOLUTIONS/kafka_2.13-3.3.2/bin/../libs/jakarta.ws.rs-api-2.1.6.jar:/Users/Florin.Drilea/Personal-Projects/DRVN-SOLUTIONS/kafka_2.13-3.3.2/bin/../libs/jakarta.xml.bind-api-2.3.3.jar:/Users/Florin.Drilea/Personal-Projects/DRVN-SOLUTIONS/kafka_2.13-3.3.2/bin/../libs/javassist-3.27.0-GA.jar:/Users/Florin.Drilea/Personal-Projects/DRVN-SOLUTIONS/kafka_2.13-3.3.2/bin/../libs/javax.servlet-api-3.1.0.jar:/Users/Florin.Drilea/Personal-Projects/DRVN-SOLUTIONS/kafka_2.13-3.3.2/bin/../libs/javax.ws.rs-api-2.1.1.jar:/Users/Florin.Drilea/Personal-Projects/DRVN-SOLUTIONS/kafka_2.13-3.3.2/bin/../libs/jaxb-api-2.3.0.jar:/Users/Florin.Drilea/Personal-Projects/DRVN-SOLUTIONS/kafka_2.13-3.3.2/bin/../libs/jersey-client-2.34.jar:/Users/Florin.Drilea/Personal-Projects/DRVN-SOLUTIONS/kafka_2.13-3.3.2/bin/../libs/jersey-common-2.34.jar:/Users/Florin.Drilea/Personal-Projects/DRVN-SOLUTIONS/kafka_2.13-3.3.2/bin/../libs/jersey-container-servlet-2.34.jar:/Users/Florin.Drilea/Personal-Projects/DRVN-SOLUTIONS/kafka_2.13-3.3.2/bin/../libs/jersey-container-servlet-core-2.34.jar:/Users/Florin.Drilea/Personal-Projects/DRVN-SOLUTIONS/kafka_2.13-3.3.2/bin/../libs/jersey-hk2-2.34.jar:/Users/Florin.Drilea/Personal-Projects/DRVN-SOLUTIONS/kafka_2.13-3.3.2/bin/../libs/jersey-server-2.34.jar:/Users/Florin.Drilea/Personal-Projects/DRVN-SOLUTIONS/kafka_2.13-3.3.2/bin/../libs/jetty-client-9.4.48.v20220622.jar:/Users/Florin.Drilea/Personal-Projects/DRVN-SOLUTIONS/kafka_2.13-3.3.2/bin/../libs/jetty-continuation-9.4.48.v20220622.jar:/Users/Florin.Drilea/Personal-Projects/DRVN-SOLUTIONS/kafka_2.13-3.3.2/bin/../libs/jetty-http-9.4.48.v20220622.jar:/Users/Florin.Drilea/Personal-Projects/DRVN-SOLUTIONS/kafka_2.13-3.3.2/bin/../libs/jetty-io-9.4.48.v20220622.jar:/Users/Florin.Drilea/Personal-Projects/DRVN-SOLUTIONS/kafka_2.13-3.3.2/bin/../libs/jetty-security-9.4.48.v20220622.jar:/Users/Florin.Drilea/Personal-Projects/DRVN-SOLUTIONS/kafka_2.13-3.3.2/bin/../libs/jetty-server-9.4.48.v20220622.jar:/Users/Florin.Drilea/Personal-Projects/DRVN-SOLUTIONS/kafka_2.13-3.3.2/bin/../libs/jetty-servlet-9.4.48.v20220622.jar:/Users/Florin.Drilea/Personal-Projects/DRVN-SOLUTIONS/kafka_2.13-3.3.2/bin/../libs/jetty-servlets-9.4.48.v20220622.jar:/Users/Florin.Drilea/Personal-Projects/DRVN-SOLUTIONS/kafka_2.13-3.3.2/bin/../libs/jetty-util-9.4.48.v20220622.jar:/Users/Florin.Drilea/Personal-Projects/DRVN-SOLUTIONS/kafka_2.13-3.3.2/bin/../libs/jetty-util-ajax-9.4.48.v20220622.jar:/Users/Florin.Drilea/Personal-Projects/DRVN-SOLUTIONS/kafka_2.13-3.3.2/bin/../libs/jline-3.21.0.jar:/Users/Florin.Drilea/Personal-Projects/DRVN-SOLUTIONS/kafka_2.13-3.3.2/bin/../libs/jopt-simple-5.0.4.jar:/Users/Florin.Drilea/Personal-Projects/DRVN-SOLUTIONS/kafka_2.13-3.3.2/bin/../libs/jose4j-0.7.9.jar:/Users/Florin.Drilea/Personal-Projects/DRVN-SOLUTIONS/kafka_2.13-3.3.2/bin/../libs/kafka-clients-3.3.2.jar:/Users/Florin.Drilea/Personal-Projects/DRVN-SOLUTIONS/kafka_2.13-3.3.2/bin/../libs/kafka-log4j-appender-3.3.2.jar:/Users/Florin.Drilea/Personal-Projects/DRVN-SOLUTIONS/kafka_2.13-3.3.2/bin/../libs/kafka-metadata-3.3.2.jar:/Users/Florin.Drilea/Personal-Projects/DRVN-SOLUTIONS/kafka_2.13-3.3.2/bin/../libs/kafka-raft-3.3.2.jar:/Users/Florin.Drilea/Personal-Projects/DRVN-SOLUTIONS/kafka_2.13-3.3.2/bin/../libs/kafka-server-common-3.3.2.jar:/Users/Florin.Drilea/Personal-Projects/DRVN-SOLUTIONS/kafka_2.13-3.3.2/bin/../libs/kafka-shell-3.3.2.jar:/Users/Florin.Drilea/Personal-Projects/DRVN-SOLUTIONS/kafka_2.13-3.3.2/bin/../libs/kafka-storage-3.3.2.jar:/Users/Florin.Drilea/Personal-Projects/DRVN-SOLUTIONS/kafka_2.13-3.3.2/bin/../libs/kafka-storage-api-3.3.2.jar:/Users/Florin.Drilea/Personal-Projects/DRVN-SOLUTIONS/kafka_2.13-3.3.2/bin/../libs/kafka-streams-3.3.2.jar:/Users/Florin.Drilea/Personal-Projects/DRVN-SOLUTIONS/kafka_2.13-3.3.2/bin/../libs/kafka-streams-examples-3.3.2.jar:/Users/Florin.Drilea/Personal-Projects/DRVN-SOLUTIONS/kafka_2.13-3.3.2/bin/../libs/kafka-streams-scala_2.13-3.3.2.jar:/Users/Florin.Drilea/Personal-Projects/DRVN-SOLUTIONS/kafka_2.13-3.3.2/bin/../libs/kafka-streams-test-utils-3.3.2.jar:/Users/Florin.Drilea/Personal-Projects/DRVN-SOLUTIONS/kafka_2.13-3.3.2/bin/../libs/kafka-tools-3.3.2.jar:/Users/Florin.Drilea/Personal-Projects/DRVN-SOLUTIONS/kafka_2.13-3.3.2/bin/../libs/kafka_2.13-3.3.2.jar:/Users/Florin.Drilea/Personal-Projects/DRVN-SOLUTIONS/kafka_2.13-3.3.2/bin/../libs/lz4-java-1.8.0.jar:/Users/Florin.Drilea/Personal-Projects/DRVN-SOLUTIONS/kafka_2.13-3.3.2/bin/../libs/maven-artifact-3.8.4.jar:/Users/Florin.Drilea/Personal-Projects/DRVN-SOLUTIONS/kafka_2.13-3.3.2/bin/../libs/metrics-core-2.2.0.jar:/Users/Florin.Drilea/Personal-Projects/DRVN-SOLUTIONS/kafka_2.13-3.3.2/bin/../libs/metrics-core-4.1.12.1.jar:/Users/Florin.Drilea/Personal-Projects/DRVN-SOLUTIONS/kafka_2.13-3.3.2/bin/../libs/netty-buffer-4.1.78.Final.jar:/Users/Florin.Drilea/Personal-Projects/DRVN-SOLUTIONS/kafka_2.13-3.3.2/bin/../libs/netty-codec-4.1.78.Final.jar:/Users/Florin.Drilea/Personal-Projects/DRVN-SOLUTIONS/kafka_2.13-3.3.2/bin/../libs/netty-common-4.1.78.Final.jar:/Users/Florin.Drilea/Personal-Projects/DRVN-SOLUTIONS/kafka_2.13-3.3.2/bin/../libs/netty-handler-4.1.78.Final.jar:/Users/Florin.Drilea/Personal-Projects/DRVN-SOLUTIONS/kafka_2.13-3.3.2/bin/../libs/netty-resolver-4.1.78.Final.jar:/Users/Florin.Drilea/Personal-Projects/DRVN-SOLUTIONS/kafka_2.13-3.3.2/bin/../libs/netty-transport-4.1.78.Final.jar:/Users/Florin.Drilea/Personal-Projects/DRVN-SOLUTIONS/kafka_2.13-3.3.2/bin/../libs/netty-transport-classes-epoll-4.1.78.Final.jar:/Users/Florin.Drilea/Personal-Projects/DRVN-SOLUTIONS/kafka_2.13-3.3.2/bin/../libs/netty-transport-native-epoll-4.1.78.Final.jar:/Users/Florin.Drilea/Personal-Projects/DRVN-SOLUTIONS/kafka_2.13-3.3.2/bin/../libs/netty-transport-native-unix-common-4.1.78.Final.jar:/Users/Florin.Drilea/Personal-Projects/DRVN-SOLUTIONS/kafka_2.13-3.3.2/bin/../libs/osgi-resource-locator-1.0.3.jar:/Users/Florin.Drilea/Personal-Projects/DRVN-SOLUTIONS/kafka_2.13-3.3.2/bin/../libs/paranamer-2.8.jar:/Users/Florin.Drilea/Personal-Projects/DRVN-SOLUTIONS/kafka_2.13-3.3.2/bin/../libs/plexus-utils-3.3.0.jar:/Users/Florin.Drilea/Personal-Projects/DRVN-SOLUTIONS/kafka_2.13-3.3.2/bin/../libs/reflections-0.9.12.jar:/Users/Florin.Drilea/Personal-Projects/DRVN-SOLUTIONS/kafka_2.13-3.3.2/bin/../libs/reload4j-1.2.19.jar:/Users/Florin.Drilea/Personal-Projects/DRVN-SOLUTIONS/kafka_2.13-3.3.2/bin/../libs/rocksdbjni-7.1.2.jar:/Users/Florin.Drilea/Personal-Projects/DRVN-SOLUTIONS/kafka_2.13-3.3.2/bin/../libs/scala-collection-compat_2.13-2.6.0.jar:/Users/Florin.Drilea/Personal-Projects/DRVN-SOLUTIONS/kafka_2.13-3.3.2/bin/../libs/scala-java8-compat_2.13-1.0.2.jar:/Users/Florin.Drilea/Personal-Projects/DRVN-SOLUTIONS/kafka_2.13-3.3.2/bin/../libs/scala-library-2.13.8.jar:/Users/Florin.Drilea/Personal-Projects/DRVN-SOLUTIONS/kafka_2.13-3.3.2/bin/../libs/scala-logging_2.13-3.9.4.jar:/Users/Florin.Drilea/Personal-Projects/DRVN-SOLUTIONS/kafka_2.13-3.3.2/bin/../libs/scala-reflect-2.13.8.jar:/Users/Florin.Drilea/Personal-Projects/DRVN-SOLUTIONS/kafka_2.13-3.3.2/bin/../libs/slf4j-api-1.7.36.jar:/Users/Florin.Drilea/Personal-Projects/DRVN-SOLUTIONS/kafka_2.13-3.3.2/bin/../libs/slf4j-reload4j-1.7.36.jar:/Users/Florin.Drilea/Personal-Projects/DRVN-SOLUTIONS/kafka_2.13-3.3.2/bin/../libs/snappy-java-1.1.8.4.jar:/Users/Florin.Drilea/Personal-Projects/DRVN-SOLUTIONS/kafka_2.13-3.3.2/bin/../libs/swagger-annotations-2.2.0.jar:/Users/Florin.Drilea/Personal-Projects/DRVN-SOLUTIONS/kafka_2.13-3.3.2/bin/../libs/trogdor-3.3.2.jar:/Users/Florin.Drilea/Personal-Projects/DRVN-SOLUTIONS/kafka_2.13-3.3.2/bin/../libs/zookeeper-3.6.3.jar:/Users/Florin.Drilea/Personal-Projects/DRVN-SOLUTIONS/kafka_2.13-3.3.2/bin/../libs/zookeeper-jute-3.6.3.jar:/Users/Florin.Drilea/Personal-Projects/DRVN-SOLUTIONS/kafka_2.13-3.3.2/bin/../libs/zstd-jni-1.5.2-1.jar (org.apache.zookeeper.ZooKeeper)
+[2023-03-02 18:03:22,116] INFO Client environment:java.library.path=/Users/Florin.Drilea/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:. (org.apache.zookeeper.ZooKeeper)
+[2023-03-02 18:03:22,116] INFO Client environment:java.io.tmpdir=/var/folders/py/wvlcm8ms5yn6xs2yrr5rk4s40000gq/T/ (org.apache.zookeeper.ZooKeeper)
+[2023-03-02 18:03:22,116] INFO Client environment:java.compiler=<NA> (org.apache.zookeeper.ZooKeeper)
+[2023-03-02 18:03:22,116] INFO Client environment:os.name=Mac OS X (org.apache.zookeeper.ZooKeeper)
+[2023-03-02 18:03:22,116] INFO Client environment:os.arch=x86_64 (org.apache.zookeeper.ZooKeeper)
+[2023-03-02 18:03:22,116] INFO Client environment:os.version=13.2.1 (org.apache.zookeeper.ZooKeeper)
+[2023-03-02 18:03:22,116] INFO Client environment:user.name=Florin.Drilea (org.apache.zookeeper.ZooKeeper)
+[2023-03-02 18:03:22,116] INFO Client environment:user.home=/Users/Florin.Drilea (org.apache.zookeeper.ZooKeeper)
+[2023-03-02 18:03:22,118] INFO Client environment:user.dir=/Users/Florin.Drilea/Personal-Projects/DRVN-SOLUTIONS/kafka_2.13-3.3.2 (org.apache.zookeeper.ZooKeeper)
+[2023-03-02 18:03:22,118] INFO Client environment:os.memory.free=1012MB (org.apache.zookeeper.ZooKeeper)
+[2023-03-02 18:03:22,118] INFO Client environment:os.memory.max=1024MB (org.apache.zookeeper.ZooKeeper)
+[2023-03-02 18:03:22,118] INFO Client environment:os.memory.total=1024MB (org.apache.zookeeper.ZooKeeper)
+[2023-03-02 18:03:22,121] INFO Initiating client connection, connectString=localhost:2181 sessionTimeout=18000 watcher=kafka.zookeeper.ZooKeeperClient$ZooKeeperClientWatcher$@57abad67 (org.apache.zookeeper.ZooKeeper)
+[2023-03-02 18:03:22,125] INFO jute.maxbuffer value is 4194304 Bytes (org.apache.zookeeper.ClientCnxnSocket)
+[2023-03-02 18:03:22,131] INFO zookeeper.request.timeout value is 0. feature enabled=false (org.apache.zookeeper.ClientCnxn)
+[2023-03-02 18:03:22,133] INFO [ZooKeeperClient Kafka server] Waiting until connected. (kafka.zookeeper.ZooKeeperClient)
+[2023-03-02 18:03:22,134] INFO Opening socket connection to server localhost/127.0.0.1:2181. (org.apache.zookeeper.ClientCnxn)
+[2023-03-02 18:03:22,139] INFO Socket connection established, initiating session, client: /127.0.0.1:60238, server: localhost/127.0.0.1:2181 (org.apache.zookeeper.ClientCnxn)
+[2023-03-02 18:03:22,188] INFO Session establishment complete on server localhost/127.0.0.1:2181, session id = 0x1000b0ff4280003, negotiated timeout = 18000 (org.apache.zookeeper.ClientCnxn)
+[2023-03-02 18:03:22,191] INFO [ZooKeeperClient Kafka server] Connected. (kafka.zookeeper.ZooKeeperClient)
+[2023-03-02 18:03:22,704] INFO Cluster ID = sZAlWeBUQ4iHjQIgoQsSVQ (kafka.server.KafkaServer)
+[2023-03-02 18:03:22,743] INFO KafkaConfig values: 
+	advertised.listeners = null
+	alter.config.policy.class.name = null
+	alter.log.dirs.replication.quota.window.num = 11
+	alter.log.dirs.replication.quota.window.size.seconds = 1
+	authorizer.class.name = 
+	auto.create.topics.enable = true
+	auto.leader.rebalance.enable = true
+	background.threads = 10
+	broker.heartbeat.interval.ms = 2000
+	broker.id = 0
+	broker.id.generation.enable = true
+	broker.rack = null
+	broker.session.timeout.ms = 9000
+	client.quota.callback.class = null
+	compression.type = producer
+	connection.failed.authentication.delay.ms = 100
+	connections.max.idle.ms = 600000
+	connections.max.reauth.ms = 0
+	control.plane.listener.name = null
+	controlled.shutdown.enable = true
+	controlled.shutdown.max.retries = 3
+	controlled.shutdown.retry.backoff.ms = 5000
+	controller.listener.names = null
+	controller.quorum.append.linger.ms = 25
+	controller.quorum.election.backoff.max.ms = 1000
+	controller.quorum.election.timeout.ms = 1000
+	controller.quorum.fetch.timeout.ms = 2000
+	controller.quorum.request.timeout.ms = 2000
+	controller.quorum.retry.backoff.ms = 20
+	controller.quorum.voters = []
+	controller.quota.window.num = 11
+	controller.quota.window.size.seconds = 1
+	controller.socket.timeout.ms = 30000
+	create.topic.policy.class.name = null
+	default.replication.factor = 1
+	delegation.token.expiry.check.interval.ms = 3600000
+	delegation.token.expiry.time.ms = 86400000
+	delegation.token.master.key = null
+	delegation.token.max.lifetime.ms = 604800000
+	delegation.token.secret.key = null
+	delete.records.purgatory.purge.interval.requests = 1
+	delete.topic.enable = true
+	early.start.listeners = null
+	fetch.max.bytes = 57671680
+	fetch.purgatory.purge.interval.requests = 1000
+	group.initial.rebalance.delay.ms = 0
+	group.max.session.timeout.ms = 1800000
+	group.max.size = 2147483647
+	group.min.session.timeout.ms = 6000
+	initial.broker.registration.timeout.ms = 60000
+	inter.broker.listener.name = null
+	inter.broker.protocol.version = 3.3-IV3
+	kafka.metrics.polling.interval.secs = 10
+	kafka.metrics.reporters = []
+	leader.imbalance.check.interval.seconds = 300
+	leader.imbalance.per.broker.percentage = 10
+	listener.security.protocol.map = PLAINTEXT:PLAINTEXT,SSL:SSL,SASL_PLAINTEXT:SASL_PLAINTEXT,SASL_SSL:SASL_SSL
+	listeners = PLAINTEXT://localhost:9092
+	log.cleaner.backoff.ms = 15000
+	log.cleaner.dedupe.buffer.size = 134217728
+	log.cleaner.delete.retention.ms = 86400000
+	log.cleaner.enable = true
+	log.cleaner.io.buffer.load.factor = 0.9
+	log.cleaner.io.buffer.size = 524288
+	log.cleaner.io.max.bytes.per.second = 1.7976931348623157E308
+	log.cleaner.max.compaction.lag.ms = 9223372036854775807
+	log.cleaner.min.cleanable.ratio = 0.5
+	log.cleaner.min.compaction.lag.ms = 0
+	log.cleaner.threads = 1
+	log.cleanup.policy = [delete]
+	log.dir = /tmp/kafka-logs
+	log.dirs = /tmp/kafka-logs
+	log.flush.interval.messages = 9223372036854775807
+	log.flush.interval.ms = null
+	log.flush.offset.checkpoint.interval.ms = 60000
+	log.flush.scheduler.interval.ms = 9223372036854775807
+	log.flush.start.offset.checkpoint.interval.ms = 60000
+	log.index.interval.bytes = 4096
+	log.index.size.max.bytes = 10485760
+	log.message.downconversion.enable = true
+	log.message.format.version = 3.0-IV1
+	log.message.timestamp.difference.max.ms = 9223372036854775807
+	log.message.timestamp.type = CreateTime
+	log.preallocate = false
+	log.retention.bytes = -1
+	log.retention.check.interval.ms = 300000
+	log.retention.hours = 168
+	log.retention.minutes = null
+	log.retention.ms = null
+	log.roll.hours = 168
+	log.roll.jitter.hours = 0
+	log.roll.jitter.ms = null
+	log.roll.ms = null
+	log.segment.bytes = 1073741824
+	log.segment.delete.delay.ms = 60000
+	max.connection.creation.rate = 2147483647
+	max.connections = 2147483647
+	max.connections.per.ip = 2147483647
+	max.connections.per.ip.overrides = 
+	max.incremental.fetch.session.cache.slots = 1000
+	message.max.bytes = 1048588
+	metadata.log.dir = null
+	metadata.log.max.record.bytes.between.snapshots = 20971520
+	metadata.log.segment.bytes = 1073741824
+	metadata.log.segment.min.bytes = 8388608
+	metadata.log.segment.ms = 604800000
+	metadata.max.idle.interval.ms = 500
+	metadata.max.retention.bytes = -1
+	metadata.max.retention.ms = 604800000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	min.insync.replicas = 1
+	node.id = 0
+	num.io.threads = 8
+	num.network.threads = 3
+	num.partitions = 1
+	num.recovery.threads.per.data.dir = 1
+	num.replica.alter.log.dirs.threads = null
+	num.replica.fetchers = 1
+	offset.metadata.max.bytes = 4096
+	offsets.commit.required.acks = -1
+	offsets.commit.timeout.ms = 5000
+	offsets.load.buffer.size = 5242880
+	offsets.retention.check.interval.ms = 600000
+	offsets.retention.minutes = 10080
+	offsets.topic.compression.codec = 0
+	offsets.topic.num.partitions = 50
+	offsets.topic.replication.factor = 1
+	offsets.topic.segment.bytes = 104857600
+	password.encoder.cipher.algorithm = AES/CBC/PKCS5Padding
+	password.encoder.iterations = 4096
+	password.encoder.key.length = 128
+	password.encoder.keyfactory.algorithm = null
+	password.encoder.old.secret = null
+	password.encoder.secret = null
+	principal.builder.class = class org.apache.kafka.common.security.authenticator.DefaultKafkaPrincipalBuilder
+	process.roles = []
+	producer.purgatory.purge.interval.requests = 1000
+	queued.max.request.bytes = -1
+	queued.max.requests = 500
+	quota.window.num = 11
+	quota.window.size.seconds = 1
+	remote.log.index.file.cache.total.size.bytes = 1073741824
+	remote.log.manager.task.interval.ms = 30000
+	remote.log.manager.task.retry.backoff.max.ms = 30000
+	remote.log.manager.task.retry.backoff.ms = 500
+	remote.log.manager.task.retry.jitter = 0.2
+	remote.log.manager.thread.pool.size = 10
+	remote.log.metadata.manager.class.name = null
+	remote.log.metadata.manager.class.path = null
+	remote.log.metadata.manager.impl.prefix = null
+	remote.log.metadata.manager.listener.name = null
+	remote.log.reader.max.pending.tasks = 100
+	remote.log.reader.threads = 10
+	remote.log.storage.manager.class.name = null
+	remote.log.storage.manager.class.path = null
+	remote.log.storage.manager.impl.prefix = null
+	remote.log.storage.system.enable = false
+	replica.fetch.backoff.ms = 1000
+	replica.fetch.max.bytes = 1048576
+	replica.fetch.min.bytes = 1
+	replica.fetch.response.max.bytes = 10485760
+	replica.fetch.wait.max.ms = 500
+	replica.high.watermark.checkpoint.interval.ms = 5000
+	replica.lag.time.max.ms = 30000
+	replica.selector.class = null
+	replica.socket.receive.buffer.bytes = 65536
+	replica.socket.timeout.ms = 30000
+	replication.quota.window.num = 11
+	replication.quota.window.size.seconds = 1
+	request.timeout.ms = 30000
+	reserved.broker.max.id = 1000
+	sasl.client.callback.handler.class = null
+	sasl.enabled.mechanisms = [GSSAPI]
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.principal.to.local.rules = [DEFAULT]
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism.controller.protocol = GSSAPI
+	sasl.mechanism.inter.broker.protocol = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	sasl.server.callback.handler.class = null
+	sasl.server.max.receive.size = 524288
+	security.inter.broker.protocol = PLAINTEXT
+	security.providers = null
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	socket.listen.backlog.size = 50
+	socket.receive.buffer.bytes = 102400
+	socket.request.max.bytes = 104857600
+	socket.send.buffer.bytes = 102400
+	ssl.cipher.suites = []
+	ssl.client.auth = none
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.principal.mapping.rules = DEFAULT
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.abort.timed.out.transaction.cleanup.interval.ms = 10000
+	transaction.max.timeout.ms = 900000
+	transaction.remove.expired.transaction.cleanup.interval.ms = 3600000
+	transaction.state.log.load.buffer.size = 5242880
+	transaction.state.log.min.isr = 1
+	transaction.state.log.num.partitions = 50
+	transaction.state.log.replication.factor = 1
+	transaction.state.log.segment.bytes = 104857600
+	transactional.id.expiration.ms = 604800000
+	unclean.leader.election.enable = false
+	zookeeper.clientCnxnSocket = null
+	zookeeper.connect = localhost:2181
+	zookeeper.connection.timeout.ms = 18000
+	zookeeper.max.in.flight.requests = 10
+	zookeeper.session.timeout.ms = 18000
+	zookeeper.set.acl = false
+	zookeeper.ssl.cipher.suites = null
+	zookeeper.ssl.client.enable = false
+	zookeeper.ssl.crl.enable = false
+	zookeeper.ssl.enabled.protocols = null
+	zookeeper.ssl.endpoint.identification.algorithm = HTTPS
+	zookeeper.ssl.keystore.location = null
+	zookeeper.ssl.keystore.password = null
+	zookeeper.ssl.keystore.type = null
+	zookeeper.ssl.ocsp.enable = false
+	zookeeper.ssl.protocol = TLSv1.2
+	zookeeper.ssl.truststore.location = null
+	zookeeper.ssl.truststore.password = null
+	zookeeper.ssl.truststore.type = null
+ (kafka.server.KafkaConfig)
+[2023-03-02 18:03:22,782] INFO [ThrottledChannelReaper-Produce]: Starting (kafka.server.ClientQuotaManager$ThrottledChannelReaper)
+[2023-03-02 18:03:22,782] INFO [ThrottledChannelReaper-Fetch]: Starting (kafka.server.ClientQuotaManager$ThrottledChannelReaper)
+[2023-03-02 18:03:22,783] INFO [ThrottledChannelReaper-Request]: Starting (kafka.server.ClientQuotaManager$ThrottledChannelReaper)
+[2023-03-02 18:03:22,785] INFO [ThrottledChannelReaper-ControllerMutation]: Starting (kafka.server.ClientQuotaManager$ThrottledChannelReaper)
+[2023-03-02 18:03:22,806] ERROR [KafkaServer id=0] Fatal error during KafkaServer startup. Prepare to shutdown (kafka.server.KafkaServer)
+org.apache.kafka.common.KafkaException: Failed to acquire lock on file .lock in /tmp/kafka-logs. A Kafka instance in another process or thread is using this directory.
+	at kafka.log.LogManager.$anonfun$lockLogDirs$1(LogManager.scala:243)
+	at scala.collection.StrictOptimizedIterableOps.flatMap(StrictOptimizedIterableOps.scala:118)
+	at scala.collection.StrictOptimizedIterableOps.flatMap$(StrictOptimizedIterableOps.scala:105)
+	at scala.collection.mutable.ArraySeq.flatMap(ArraySeq.scala:37)
+	at kafka.log.LogManager.lockLogDirs(LogManager.scala:238)
+	at kafka.log.LogManager.<init>(LogManager.scala:114)
+	at kafka.log.LogManager$.apply(LogManager.scala:1383)
+	at kafka.server.KafkaServer.startup(KafkaServer.scala:261)
+	at kafka.Kafka$.main(Kafka.scala:109)
+	at kafka.Kafka.main(Kafka.scala)
+[2023-03-02 18:03:22,807] INFO [KafkaServer id=0] shutting down (kafka.server.KafkaServer)
+[2023-03-02 18:03:22,809] INFO [ZooKeeperClient Kafka server] Closing. (kafka.zookeeper.ZooKeeperClient)
+[2023-03-02 18:03:22,937] INFO Session: 0x1000b0ff4280003 closed (org.apache.zookeeper.ZooKeeper)
+[2023-03-02 18:03:22,937] INFO EventThread shut down for session: 0x1000b0ff4280003 (org.apache.zookeeper.ClientCnxn)
+[2023-03-02 18:03:22,938] INFO [ZooKeeperClient Kafka server] Closed. (kafka.zookeeper.ZooKeeperClient)
+[2023-03-02 18:03:22,939] INFO [ThrottledChannelReaper-Fetch]: Shutting down (kafka.server.ClientQuotaManager$ThrottledChannelReaper)
+[2023-03-02 18:03:22,940] INFO [ThrottledChannelReaper-Fetch]: Stopped (kafka.server.ClientQuotaManager$ThrottledChannelReaper)
+[2023-03-02 18:03:22,940] INFO [ThrottledChannelReaper-Fetch]: Shutdown completed (kafka.server.ClientQuotaManager$ThrottledChannelReaper)
+[2023-03-02 18:03:22,940] INFO [ThrottledChannelReaper-Produce]: Shutting down (kafka.server.ClientQuotaManager$ThrottledChannelReaper)
+[2023-03-02 18:03:22,940] INFO [ThrottledChannelReaper-Produce]: Stopped (kafka.server.ClientQuotaManager$ThrottledChannelReaper)
+[2023-03-02 18:03:22,940] INFO [ThrottledChannelReaper-Produce]: Shutdown completed (kafka.server.ClientQuotaManager$ThrottledChannelReaper)
+[2023-03-02 18:03:22,940] INFO [ThrottledChannelReaper-Request]: Shutting down (kafka.server.ClientQuotaManager$ThrottledChannelReaper)
+[2023-03-02 18:03:22,941] INFO [ThrottledChannelReaper-Request]: Stopped (kafka.server.ClientQuotaManager$ThrottledChannelReaper)
+[2023-03-02 18:03:22,941] INFO [ThrottledChannelReaper-Request]: Shutdown completed (kafka.server.ClientQuotaManager$ThrottledChannelReaper)
+[2023-03-02 18:03:22,941] INFO [ThrottledChannelReaper-ControllerMutation]: Shutting down (kafka.server.ClientQuotaManager$ThrottledChannelReaper)
+[2023-03-02 18:03:22,941] INFO [ThrottledChannelReaper-ControllerMutation]: Stopped (kafka.server.ClientQuotaManager$ThrottledChannelReaper)
+[2023-03-02 18:03:22,941] INFO [ThrottledChannelReaper-ControllerMutation]: Shutdown completed (kafka.server.ClientQuotaManager$ThrottledChannelReaper)
+[2023-03-02 18:03:22,942] INFO Metrics scheduler closed (org.apache.kafka.common.metrics.Metrics)
+[2023-03-02 18:03:22,942] INFO Closing reporter org.apache.kafka.common.metrics.JmxReporter (org.apache.kafka.common.metrics.Metrics)
+[2023-03-02 18:03:22,942] INFO Metrics reporters closed (org.apache.kafka.common.metrics.Metrics)
+[2023-03-02 18:03:22,944] INFO Broker and topic stats closed (kafka.server.BrokerTopicStats)
+[2023-03-02 18:03:22,947] INFO App info kafka.server for 0 unregistered (org.apache.kafka.common.utils.AppInfoParser)
+[2023-03-02 18:03:22,948] INFO [KafkaServer id=0] shut down completed (kafka.server.KafkaServer)
+[2023-03-02 18:03:22,948] ERROR Exiting Kafka due to fatal exception during startup. (kafka.Kafka$)
+org.apache.kafka.common.KafkaException: Failed to acquire lock on file .lock in /tmp/kafka-logs. A Kafka instance in another process or thread is using this directory.
+	at kafka.log.LogManager.$anonfun$lockLogDirs$1(LogManager.scala:243)
+	at scala.collection.StrictOptimizedIterableOps.flatMap(StrictOptimizedIterableOps.scala:118)
+	at scala.collection.StrictOptimizedIterableOps.flatMap$(StrictOptimizedIterableOps.scala:105)
+	at scala.collection.mutable.ArraySeq.flatMap(ArraySeq.scala:37)
+	at kafka.log.LogManager.lockLogDirs(LogManager.scala:238)
+	at kafka.log.LogManager.<init>(LogManager.scala:114)
+	at kafka.log.LogManager$.apply(LogManager.scala:1383)
+	at kafka.server.KafkaServer.startup(KafkaServer.scala:261)
+	at kafka.Kafka$.main(Kafka.scala:109)
+	at kafka.Kafka.main(Kafka.scala)
+[2023-03-02 18:03:22,948] INFO [KafkaServer id=0] shutting down (kafka.server.KafkaServer)
+[2023-03-02 18:03:41,872] INFO Creating topic input-vehicle-topic with configuration {} and initial partition assignment HashMap(0 -> ArrayBuffer(0)) (kafka.zk.AdminZkClient)
+[2023-03-02 18:03:42,048] INFO [Controller id=0, targetBrokerId=0] Node 0 disconnected. (org.apache.kafka.clients.NetworkClient)
+[2023-03-02 18:03:42,053] INFO [ReplicaFetcherManager on broker 0] Removed fetcher for partitions Set(input-vehicle-topic-0) (kafka.server.ReplicaFetcherManager)
+[2023-03-02 18:03:42,062] INFO [LogLoader partition=input-vehicle-topic-0, dir=/tmp/kafka-logs] Loading producer state till offset 0 with message format version 2 (kafka.log.UnifiedLog$)
+[2023-03-02 18:03:42,067] INFO Created log for partition input-vehicle-topic-0 in /tmp/kafka-logs/input-vehicle-topic-0 with properties {} (kafka.log.LogManager)
+[2023-03-02 18:03:42,087] INFO [Partition input-vehicle-topic-0 broker=0] No checkpointed highwatermark is found for partition input-vehicle-topic-0 (kafka.cluster.Partition)
+[2023-03-02 18:03:42,087] INFO [Partition input-vehicle-topic-0 broker=0] Log loaded for partition input-vehicle-topic-0 with initial high watermark 0 (kafka.cluster.Partition)
+[2023-03-02 18:03:50,965] INFO Creating topic output-vehicle-topic with configuration {} and initial partition assignment HashMap(0 -> ArrayBuffer(0)) (kafka.zk.AdminZkClient)
+[2023-03-02 18:03:51,102] INFO [ReplicaFetcherManager on broker 0] Removed fetcher for partitions Set(output-vehicle-topic-0) (kafka.server.ReplicaFetcherManager)
+[2023-03-02 18:03:51,107] INFO [LogLoader partition=output-vehicle-topic-0, dir=/tmp/kafka-logs] Loading producer state till offset 0 with message format version 2 (kafka.log.UnifiedLog$)
+[2023-03-02 18:03:51,108] INFO Created log for partition output-vehicle-topic-0 in /tmp/kafka-logs/output-vehicle-topic-0 with properties {} (kafka.log.LogManager)
+[2023-03-02 18:03:51,109] INFO [Partition output-vehicle-topic-0 broker=0] No checkpointed highwatermark is found for partition output-vehicle-topic-0 (kafka.cluster.Partition)
+[2023-03-02 18:03:51,128] INFO [Partition output-vehicle-topic-0 broker=0] Log loaded for partition output-vehicle-topic-0 with initial high watermark 0 (kafka.cluster.Partition)
+[2023-03-02 18:04:27,239] INFO [GroupCoordinator 0]: Dynamic member with unknown member id joins group console-consumer-34050 in Empty state. Created a new member id console-consumer-a6cad52c-cc6a-4f9f-b59e-36dd74e63b36 and request the member to rejoin with this id. (kafka.coordinator.group.GroupCoordinator)
+[2023-03-02 18:04:27,241] INFO [GroupCoordinator 0]: Preparing to rebalance group console-consumer-34050 in state PreparingRebalance with old generation 0 (__consumer_offsets-23) (reason: Adding new member console-consumer-a6cad52c-cc6a-4f9f-b59e-36dd74e63b36 with group instance id None; client reason: rebalance failed due to MemberIdRequiredException) (kafka.coordinator.group.GroupCoordinator)
+[2023-03-02 18:04:27,242] INFO [GroupCoordinator 0]: Stabilized group console-consumer-34050 generation 1 (__consumer_offsets-23) with 1 members (kafka.coordinator.group.GroupCoordinator)
+[2023-03-02 18:04:27,248] INFO [GroupCoordinator 0]: Assignment received from leader console-consumer-a6cad52c-cc6a-4f9f-b59e-36dd74e63b36 for group console-consumer-34050 for generation 1. The group has 1 members, 0 of which are static. (kafka.coordinator.group.GroupCoordinator)
+[2023-03-02 18:04:38,457] INFO [GroupCoordinator 0]: Dynamic member with unknown member id joins group drvn-application-id in Empty state. Created a new member id drvn-application-id-2a5d70b6-6d63-421c-92de-dc61db4f8b71-StreamThread-1-consumer-7c082bd1-5864-4d25-b79c-74a3f58f5e12 and request the member to rejoin with this id. (kafka.coordinator.group.GroupCoordinator)
+[2023-03-02 18:04:38,460] INFO [GroupCoordinator 0]: Preparing to rebalance group drvn-application-id in state PreparingRebalance with old generation 4 (__consumer_offsets-11) (reason: Adding new member drvn-application-id-2a5d70b6-6d63-421c-92de-dc61db4f8b71-StreamThread-1-consumer-7c082bd1-5864-4d25-b79c-74a3f58f5e12 with group instance id None; client reason: rebalance failed due to MemberIdRequiredException) (kafka.coordinator.group.GroupCoordinator)
+[2023-03-02 18:04:38,460] INFO [GroupCoordinator 0]: Stabilized group drvn-application-id generation 5 (__consumer_offsets-11) with 1 members (kafka.coordinator.group.GroupCoordinator)
+[2023-03-02 18:04:38,487] INFO [GroupCoordinator 0]: Assignment received from leader drvn-application-id-2a5d70b6-6d63-421c-92de-dc61db4f8b71-StreamThread-1-consumer-7c082bd1-5864-4d25-b79c-74a3f58f5e12 for group drvn-application-id for generation 5. The group has 1 members, 0 of which are static. (kafka.coordinator.group.GroupCoordinator)
+[2023-03-02 18:04:38,660] INFO [GroupCoordinator 0]: Preparing to rebalance group drvn-application-id in state PreparingRebalance with old generation 5 (__consumer_offsets-11) (reason: Removing member drvn-application-id-2a5d70b6-6d63-421c-92de-dc61db4f8b71-StreamThread-1-consumer-7c082bd1-5864-4d25-b79c-74a3f58f5e12 on LeaveGroup; client reason: the consumer unsubscribed from all topics) (kafka.coordinator.group.GroupCoordinator)
+[2023-03-02 18:04:38,660] INFO [GroupCoordinator 0]: Group drvn-application-id with generation 6 is now empty (__consumer_offsets-11) (kafka.coordinator.group.GroupCoordinator)
+[2023-03-02 18:04:38,661] INFO [GroupCoordinator 0]: Member MemberMetadata(memberId=drvn-application-id-2a5d70b6-6d63-421c-92de-dc61db4f8b71-StreamThread-1-consumer-7c082bd1-5864-4d25-b79c-74a3f58f5e12, groupInstanceId=None, clientId=drvn-application-id-2a5d70b6-6d63-421c-92de-dc61db4f8b71-StreamThread-1-consumer, clientHost=/127.0.0.1, sessionTimeoutMs=45000, rebalanceTimeoutMs=300000, supportedProtocols=List(stream)) has left group drvn-application-id through explicit `LeaveGroup`; client reason: the consumer unsubscribed from all topics (kafka.coordinator.group.GroupCoordinator)
+[2023-03-02 18:05:03,621] INFO [GroupCoordinator 0]: Preparing to rebalance group console-consumer-34050 in state PreparingRebalance with old generation 1 (__consumer_offsets-23) (reason: Removing member console-consumer-a6cad52c-cc6a-4f9f-b59e-36dd74e63b36 on LeaveGroup; client reason: the consumer is being closed) (kafka.coordinator.group.GroupCoordinator)
+[2023-03-02 18:05:03,621] INFO [GroupCoordinator 0]: Group console-consumer-34050 with generation 2 is now empty (__consumer_offsets-23) (kafka.coordinator.group.GroupCoordinator)
+[2023-03-02 18:05:03,622] INFO [GroupCoordinator 0]: Member MemberMetadata(memberId=console-consumer-a6cad52c-cc6a-4f9f-b59e-36dd74e63b36, groupInstanceId=None, clientId=console-consumer, clientHost=/127.0.0.1, sessionTimeoutMs=45000, rebalanceTimeoutMs=300000, supportedProtocols=List(range, cooperative-sticky)) has left group console-consumer-34050 through explicit `LeaveGroup`; client reason: the consumer is being closed (kafka.coordinator.group.GroupCoordinator)
+[2023-03-02 18:05:06,327] INFO [GroupCoordinator 0]: Dynamic member with unknown member id joins group console-consumer-28150 in Empty state. Created a new member id console-consumer-f458ffad-08e0-4506-8b8a-bed3c9919ea8 and request the member to rejoin with this id. (kafka.coordinator.group.GroupCoordinator)
+[2023-03-02 18:05:06,329] INFO [GroupCoordinator 0]: Preparing to rebalance group console-consumer-28150 in state PreparingRebalance with old generation 0 (__consumer_offsets-27) (reason: Adding new member console-consumer-f458ffad-08e0-4506-8b8a-bed3c9919ea8 with group instance id None; client reason: rebalance failed due to MemberIdRequiredException) (kafka.coordinator.group.GroupCoordinator)
+[2023-03-02 18:05:06,330] INFO [GroupCoordinator 0]: Stabilized group console-consumer-28150 generation 1 (__consumer_offsets-27) with 1 members (kafka.coordinator.group.GroupCoordinator)
+[2023-03-02 18:05:06,334] INFO [GroupCoordinator 0]: Assignment received from leader console-consumer-f458ffad-08e0-4506-8b8a-bed3c9919ea8 for group console-consumer-28150 for generation 1. The group has 1 members, 0 of which are static. (kafka.coordinator.group.GroupCoordinator)
+[2023-03-02 18:05:10,321] INFO [GroupCoordinator 0]: Dynamic member with unknown member id joins group drvn-application-id in Empty state. Created a new member id drvn-application-id-ac25c177-5839-4cb1-95bb-e2e61911ad99-StreamThread-1-consumer-09804079-f61b-496a-910d-4dd30b2fdf77 and request the member to rejoin with this id. (kafka.coordinator.group.GroupCoordinator)
+[2023-03-02 18:05:10,324] INFO [GroupCoordinator 0]: Preparing to rebalance group drvn-application-id in state PreparingRebalance with old generation 6 (__consumer_offsets-11) (reason: Adding new member drvn-application-id-ac25c177-5839-4cb1-95bb-e2e61911ad99-StreamThread-1-consumer-09804079-f61b-496a-910d-4dd30b2fdf77 with group instance id None; client reason: rebalance failed due to MemberIdRequiredException) (kafka.coordinator.group.GroupCoordinator)
+[2023-03-02 18:05:10,325] INFO [GroupCoordinator 0]: Stabilized group drvn-application-id generation 7 (__consumer_offsets-11) with 1 members (kafka.coordinator.group.GroupCoordinator)
+[2023-03-02 18:05:10,357] INFO [GroupCoordinator 0]: Assignment received from leader drvn-application-id-ac25c177-5839-4cb1-95bb-e2e61911ad99-StreamThread-1-consumer-09804079-f61b-496a-910d-4dd30b2fdf77 for group drvn-application-id for generation 7. The group has 1 members, 0 of which are static. (kafka.coordinator.group.GroupCoordinator)
+[2023-03-02 18:05:10,463] INFO [GroupCoordinator 0]: Preparing to rebalance group drvn-application-id in state PreparingRebalance with old generation 7 (__consumer_offsets-11) (reason: Removing member drvn-application-id-ac25c177-5839-4cb1-95bb-e2e61911ad99-StreamThread-1-consumer-09804079-f61b-496a-910d-4dd30b2fdf77 on LeaveGroup; client reason: the consumer unsubscribed from all topics) (kafka.coordinator.group.GroupCoordinator)
+[2023-03-02 18:05:10,463] INFO [GroupCoordinator 0]: Group drvn-application-id with generation 8 is now empty (__consumer_offsets-11) (kafka.coordinator.group.GroupCoordinator)
+[2023-03-02 18:05:10,464] INFO [GroupCoordinator 0]: Member MemberMetadata(memberId=drvn-application-id-ac25c177-5839-4cb1-95bb-e2e61911ad99-StreamThread-1-consumer-09804079-f61b-496a-910d-4dd30b2fdf77, groupInstanceId=None, clientId=drvn-application-id-ac25c177-5839-4cb1-95bb-e2e61911ad99-StreamThread-1-consumer, clientHost=/127.0.0.1, sessionTimeoutMs=45000, rebalanceTimeoutMs=300000, supportedProtocols=List(stream)) has left group drvn-application-id through explicit `LeaveGroup`; client reason: the consumer unsubscribed from all topics (kafka.coordinator.group.GroupCoordinator)
+[2023-03-02 18:09:08,467] INFO [GroupMetadataManager brokerId=0] Group console-consumer-34050 transitioned to Dead in generation 2 (kafka.coordinator.group.GroupMetadataManager)
+[2023-03-02 18:09:08,470] INFO [GroupMetadataManager brokerId=0] Group drvn-application-id transitioned to Dead in generation 8 (kafka.coordinator.group.GroupMetadataManager)
+[2023-03-02 18:10:31,242] WARN Session 0x1000b0ff4280002 for sever localhost/0:0:0:0:0:0:0:1:2181, Closing socket connection. Attempting reconnect except it is a SessionExpiredException. (org.apache.zookeeper.ClientCnxn)
+EndOfStreamException: Unable to read additional data from server sessionid 0x1000b0ff4280002, likely server has closed socket
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doIO(ClientCnxnSocketNIO.java:77)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:350)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1290)
+[2023-03-02 18:10:32,409] INFO Opening socket connection to server localhost/127.0.0.1:2181. (org.apache.zookeeper.ClientCnxn)
+[2023-03-02 18:10:32,410] WARN Session 0x1000b0ff4280002 for sever localhost/127.0.0.1:2181, Closing socket connection. Attempting reconnect except it is a SessionExpiredException. (org.apache.zookeeper.ClientCnxn)
+java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:779)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:344)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1290)
+[2023-03-02 18:10:33,842] INFO Opening socket connection to server localhost/0:0:0:0:0:0:0:1:2181. (org.apache.zookeeper.ClientCnxn)
+[2023-03-02 18:10:33,843] WARN Session 0x1000b0ff4280002 for sever localhost/0:0:0:0:0:0:0:1:2181, Closing socket connection. Attempting reconnect except it is a SessionExpiredException. (org.apache.zookeeper.ClientCnxn)
+java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:779)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:344)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1290)
+[2023-03-02 18:10:35,673] INFO Opening socket connection to server localhost/127.0.0.1:2181. (org.apache.zookeeper.ClientCnxn)
+[2023-03-02 18:10:35,673] WARN Session 0x1000b0ff4280002 for sever localhost/127.0.0.1:2181, Closing socket connection. Attempting reconnect except it is a SessionExpiredException. (org.apache.zookeeper.ClientCnxn)
+java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:779)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:344)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1290)
+[2023-03-02 18:10:37,771] INFO Opening socket connection to server localhost/127.0.0.1:2181. (org.apache.zookeeper.ClientCnxn)
+[2023-03-02 18:10:37,772] WARN Session 0x1000b0ff4280002 for sever localhost/127.0.0.1:2181, Closing socket connection. Attempting reconnect except it is a SessionExpiredException. (org.apache.zookeeper.ClientCnxn)
+java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:779)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:344)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1290)
+[2023-03-02 18:10:38,996] INFO Opening socket connection to server localhost/0:0:0:0:0:0:0:1:2181. (org.apache.zookeeper.ClientCnxn)
+[2023-03-02 18:10:38,997] WARN Session 0x1000b0ff4280002 for sever localhost/0:0:0:0:0:0:0:1:2181, Closing socket connection. Attempting reconnect except it is a SessionExpiredException. (org.apache.zookeeper.ClientCnxn)
+java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:779)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:344)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1290)
+[2023-03-02 18:10:40,377] INFO Opening socket connection to server localhost/127.0.0.1:2181. (org.apache.zookeeper.ClientCnxn)
+[2023-03-02 18:10:40,378] WARN Session 0x1000b0ff4280002 for sever localhost/127.0.0.1:2181, Closing socket connection. Attempting reconnect except it is a SessionExpiredException. (org.apache.zookeeper.ClientCnxn)
+java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:779)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:344)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1290)
+[2023-03-02 18:10:41,617] INFO Opening socket connection to server localhost/0:0:0:0:0:0:0:1:2181. (org.apache.zookeeper.ClientCnxn)
+[2023-03-02 18:10:41,617] WARN Session 0x1000b0ff4280002 for sever localhost/0:0:0:0:0:0:0:1:2181, Closing socket connection. Attempting reconnect except it is a SessionExpiredException. (org.apache.zookeeper.ClientCnxn)
+java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:779)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:344)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1290)
+[2023-03-02 18:10:43,659] INFO Opening socket connection to server localhost/0:0:0:0:0:0:0:1:2181. (org.apache.zookeeper.ClientCnxn)
+[2023-03-02 18:10:43,659] WARN Session 0x1000b0ff4280002 for sever localhost/0:0:0:0:0:0:0:1:2181, Closing socket connection. Attempting reconnect except it is a SessionExpiredException. (org.apache.zookeeper.ClientCnxn)
+java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:779)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:344)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1290)
+[2023-03-02 18:10:45,161] INFO Opening socket connection to server localhost/0:0:0:0:0:0:0:1:2181. (org.apache.zookeeper.ClientCnxn)
+[2023-03-02 18:10:45,162] WARN Session 0x1000b0ff4280002 for sever localhost/0:0:0:0:0:0:0:1:2181, Closing socket connection. Attempting reconnect except it is a SessionExpiredException. (org.apache.zookeeper.ClientCnxn)
+java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:779)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:344)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1290)
+[2023-03-02 18:10:47,120] INFO Opening socket connection to server localhost/127.0.0.1:2181. (org.apache.zookeeper.ClientCnxn)
+[2023-03-02 18:10:47,121] WARN Session 0x1000b0ff4280002 for sever localhost/127.0.0.1:2181, Closing socket connection. Attempting reconnect except it is a SessionExpiredException. (org.apache.zookeeper.ClientCnxn)
+java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:779)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:344)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1290)
+[2023-03-02 18:10:48,317] INFO Opening socket connection to server localhost/127.0.0.1:2181. (org.apache.zookeeper.ClientCnxn)
+[2023-03-02 18:10:48,318] WARN Session 0x1000b0ff4280002 for sever localhost/127.0.0.1:2181, Closing socket connection. Attempting reconnect except it is a SessionExpiredException. (org.apache.zookeeper.ClientCnxn)
+java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:779)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:344)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1290)
+[2023-03-02 18:10:49,878] INFO Opening socket connection to server localhost/127.0.0.1:2181. (org.apache.zookeeper.ClientCnxn)
+[2023-03-02 18:10:49,879] WARN Session 0x1000b0ff4280002 for sever localhost/127.0.0.1:2181, Closing socket connection. Attempting reconnect except it is a SessionExpiredException. (org.apache.zookeeper.ClientCnxn)
+java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:779)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:344)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1290)
+[2023-03-02 18:10:51,251] INFO Opening socket connection to server localhost/127.0.0.1:2181. (org.apache.zookeeper.ClientCnxn)
+[2023-03-02 18:10:51,252] WARN Session 0x1000b0ff4280002 for sever localhost/127.0.0.1:2181, Closing socket connection. Attempting reconnect except it is a SessionExpiredException. (org.apache.zookeeper.ClientCnxn)
+java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:779)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:344)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1290)
+[2023-03-02 18:10:51,835] INFO Terminating process due to signal SIGINT (org.apache.kafka.common.utils.LoggingSignalHandler)
+[2023-03-02 18:10:51,836] INFO [KafkaServer id=0] shutting down (kafka.server.KafkaServer)
+[2023-03-02 18:10:51,837] INFO [KafkaServer id=0] Starting controlled shutdown (kafka.server.KafkaServer)
+[2023-03-02 18:10:51,852] INFO [KafkaServer id=0] Controlled shutdown request returned successfully after 8ms (kafka.server.KafkaServer)
+[2023-03-02 18:10:51,856] INFO [/config/changes-event-process-thread]: Shutting down (kafka.common.ZkNodeChangeNotificationListener$ChangeEventProcessThread)
+[2023-03-02 18:10:51,856] INFO [/config/changes-event-process-thread]: Stopped (kafka.common.ZkNodeChangeNotificationListener$ChangeEventProcessThread)
+[2023-03-02 18:10:51,856] INFO [/config/changes-event-process-thread]: Shutdown completed (kafka.common.ZkNodeChangeNotificationListener$ChangeEventProcessThread)
+[2023-03-02 18:10:51,857] INFO [SocketServer listenerType=ZK_BROKER, nodeId=0] Stopping socket server request processors (kafka.network.SocketServer)
+[2023-03-02 18:10:51,864] INFO [SocketServer listenerType=ZK_BROKER, nodeId=0] Stopped socket server request processors (kafka.network.SocketServer)
+[2023-03-02 18:10:51,865] INFO [data-plane Kafka Request Handler on Broker 0], shutting down (kafka.server.KafkaRequestHandlerPool)
+[2023-03-02 18:10:51,867] INFO [data-plane Kafka Request Handler on Broker 0], shut down completely (kafka.server.KafkaRequestHandlerPool)
+[2023-03-02 18:10:51,870] INFO [ExpirationReaper-0-AlterAcls]: Shutting down (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2023-03-02 18:10:51,871] INFO [ExpirationReaper-0-AlterAcls]: Shutdown completed (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2023-03-02 18:10:51,871] INFO [ExpirationReaper-0-AlterAcls]: Stopped (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2023-03-02 18:10:51,872] INFO [KafkaApi-0] Shutdown complete. (kafka.server.KafkaApis)
+[2023-03-02 18:10:51,872] INFO [ExpirationReaper-0-topic]: Shutting down (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2023-03-02 18:10:51,873] INFO [ExpirationReaper-0-topic]: Stopped (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2023-03-02 18:10:51,873] INFO [ExpirationReaper-0-topic]: Shutdown completed (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2023-03-02 18:10:51,874] INFO [TransactionCoordinator id=0] Shutting down. (kafka.coordinator.transaction.TransactionCoordinator)
+[2023-03-02 18:10:51,876] INFO [Transaction State Manager 0]: Shutdown complete (kafka.coordinator.transaction.TransactionStateManager)
+[2023-03-02 18:10:51,876] INFO [Transaction Marker Channel Manager 0]: Shutting down (kafka.coordinator.transaction.TransactionMarkerChannelManager)
+[2023-03-02 18:10:51,876] INFO [Transaction Marker Channel Manager 0]: Shutdown completed (kafka.coordinator.transaction.TransactionMarkerChannelManager)
+[2023-03-02 18:10:51,876] INFO [Transaction Marker Channel Manager 0]: Stopped (kafka.coordinator.transaction.TransactionMarkerChannelManager)
+[2023-03-02 18:10:51,877] INFO [TransactionCoordinator id=0] Shutdown complete. (kafka.coordinator.transaction.TransactionCoordinator)
+[2023-03-02 18:10:51,877] INFO [GroupCoordinator 0]: Shutting down. (kafka.coordinator.group.GroupCoordinator)
+[2023-03-02 18:10:51,878] INFO [ExpirationReaper-0-Heartbeat]: Shutting down (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2023-03-02 18:10:51,878] INFO [ExpirationReaper-0-Heartbeat]: Shutdown completed (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2023-03-02 18:10:51,878] INFO [ExpirationReaper-0-Heartbeat]: Stopped (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2023-03-02 18:10:51,878] INFO [ExpirationReaper-0-Rebalance]: Shutting down (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2023-03-02 18:10:51,878] INFO [ExpirationReaper-0-Rebalance]: Stopped (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2023-03-02 18:10:51,878] INFO [ExpirationReaper-0-Rebalance]: Shutdown completed (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2023-03-02 18:10:51,879] INFO [GroupCoordinator 0]: Shutdown complete. (kafka.coordinator.group.GroupCoordinator)
+[2023-03-02 18:10:51,880] INFO [ReplicaManager broker=0] Shutting down (kafka.server.ReplicaManager)
+[2023-03-02 18:10:51,880] INFO [LogDirFailureHandler]: Shutting down (kafka.server.ReplicaManager$LogDirFailureHandler)
+[2023-03-02 18:10:51,880] INFO [LogDirFailureHandler]: Shutdown completed (kafka.server.ReplicaManager$LogDirFailureHandler)
+[2023-03-02 18:10:51,880] INFO [LogDirFailureHandler]: Stopped (kafka.server.ReplicaManager$LogDirFailureHandler)
+[2023-03-02 18:10:51,880] INFO [ReplicaFetcherManager on broker 0] shutting down (kafka.server.ReplicaFetcherManager)
+[2023-03-02 18:10:51,881] INFO [ReplicaFetcherManager on broker 0] shutdown completed (kafka.server.ReplicaFetcherManager)
+[2023-03-02 18:10:51,882] INFO [ReplicaAlterLogDirsManager on broker 0] shutting down (kafka.server.ReplicaAlterLogDirsManager)
+[2023-03-02 18:10:51,882] INFO [ReplicaAlterLogDirsManager on broker 0] shutdown completed (kafka.server.ReplicaAlterLogDirsManager)
+[2023-03-02 18:10:51,882] INFO [ExpirationReaper-0-Fetch]: Shutting down (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2023-03-02 18:10:51,882] INFO [ExpirationReaper-0-Fetch]: Stopped (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2023-03-02 18:10:51,882] INFO [ExpirationReaper-0-Fetch]: Shutdown completed (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2023-03-02 18:10:51,882] INFO [ExpirationReaper-0-Produce]: Shutting down (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2023-03-02 18:10:51,883] INFO [ExpirationReaper-0-Produce]: Stopped (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2023-03-02 18:10:51,883] INFO [ExpirationReaper-0-Produce]: Shutdown completed (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2023-03-02 18:10:51,883] INFO [ExpirationReaper-0-DeleteRecords]: Shutting down (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2023-03-02 18:10:51,883] INFO [ExpirationReaper-0-DeleteRecords]: Stopped (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2023-03-02 18:10:51,883] INFO [ExpirationReaper-0-DeleteRecords]: Shutdown completed (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2023-03-02 18:10:51,884] INFO [ExpirationReaper-0-ElectLeader]: Shutting down (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2023-03-02 18:10:51,884] INFO [ExpirationReaper-0-ElectLeader]: Stopped (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2023-03-02 18:10:51,884] INFO [ExpirationReaper-0-ElectLeader]: Shutdown completed (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2023-03-02 18:10:51,910] INFO [ReplicaManager broker=0] Shut down completely (kafka.server.ReplicaManager)
+[2023-03-02 18:10:51,911] INFO [BrokerToControllerChannelManager broker=0 name=alterPartition]: Shutting down (kafka.server.BrokerToControllerRequestThread)
+[2023-03-02 18:10:51,911] INFO [BrokerToControllerChannelManager broker=0 name=alterPartition]: Stopped (kafka.server.BrokerToControllerRequestThread)
+[2023-03-02 18:10:51,911] INFO [BrokerToControllerChannelManager broker=0 name=alterPartition]: Shutdown completed (kafka.server.BrokerToControllerRequestThread)
+[2023-03-02 18:10:51,913] INFO Broker to controller channel manager for alterPartition shutdown (kafka.server.BrokerToControllerChannelManagerImpl)
+[2023-03-02 18:10:51,913] INFO [BrokerToControllerChannelManager broker=0 name=forwarding]: Shutting down (kafka.server.BrokerToControllerRequestThread)
+[2023-03-02 18:10:51,913] INFO [BrokerToControllerChannelManager broker=0 name=forwarding]: Stopped (kafka.server.BrokerToControllerRequestThread)
+[2023-03-02 18:10:51,913] INFO [BrokerToControllerChannelManager broker=0 name=forwarding]: Shutdown completed (kafka.server.BrokerToControllerRequestThread)
+[2023-03-02 18:10:51,914] INFO Broker to controller channel manager for forwarding shutdown (kafka.server.BrokerToControllerChannelManagerImpl)
+[2023-03-02 18:10:51,914] INFO Shutting down. (kafka.log.LogManager)
+[2023-03-02 18:10:52,026] INFO [ProducerStateManager partition=__consumer_offsets-29] Wrote producer snapshot at offset 92 with 0 producer ids in 22 ms. (kafka.log.ProducerStateManager)
+[2023-03-02 18:10:52,711] INFO [ProducerStateManager partition=__consumer_offsets-27] Wrote producer snapshot at offset 1 with 0 producer ids in 24 ms. (kafka.log.ProducerStateManager)
+[2023-03-02 18:10:53,004] INFO Opening socket connection to server localhost/127.0.0.1:2181. (org.apache.zookeeper.ClientCnxn)
+[2023-03-02 18:10:53,018] WARN Session 0x1000b0ff4280002 for sever localhost/127.0.0.1:2181, Closing socket connection. Attempting reconnect except it is a SessionExpiredException. (org.apache.zookeeper.ClientCnxn)
+java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:779)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:344)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1290)
+[2023-03-02 18:10:53,149] INFO [ProducerStateManager partition=__consumer_offsets-11] Wrote producer snapshot at offset 19 with 0 producer ids in 24 ms. (kafka.log.ProducerStateManager)
+[2023-03-02 18:10:53,418] INFO [ProducerStateManager partition=input-vehicle-topic-0] Wrote producer snapshot at offset 2 with 1 producer ids in 22 ms. (kafka.log.ProducerStateManager)
+[2023-03-02 18:10:53,491] INFO [ProducerStateManager partition=__consumer_offsets-23] Wrote producer snapshot at offset 6 with 0 producer ids in 23 ms. (kafka.log.ProducerStateManager)
+[2023-03-02 18:10:53,821] INFO Shutdown complete. (kafka.log.LogManager)
+[2023-03-02 18:10:53,828] INFO [feature-zk-node-event-process-thread]: Shutting down (kafka.server.FinalizedFeatureChangeListener$ChangeNotificationProcessorThread)
+[2023-03-02 18:10:53,829] INFO [feature-zk-node-event-process-thread]: Shutdown completed (kafka.server.FinalizedFeatureChangeListener$ChangeNotificationProcessorThread)
+[2023-03-02 18:10:53,829] INFO [feature-zk-node-event-process-thread]: Stopped (kafka.server.FinalizedFeatureChangeListener$ChangeNotificationProcessorThread)
+[2023-03-02 18:10:53,830] INFO [ZooKeeperClient Kafka server] Closing. (kafka.zookeeper.ZooKeeperClient)
+[2023-03-02 18:10:54,390] INFO Opening socket connection to server localhost/0:0:0:0:0:0:0:1:2181. (org.apache.zookeeper.ClientCnxn)
+[2023-03-02 18:10:54,391] WARN An exception was thrown while closing send thread for session 0x1000b0ff4280002. (org.apache.zookeeper.ClientCnxn)
+java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:779)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:344)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1290)
+[2023-03-02 18:10:54,499] INFO Session: 0x1000b0ff4280002 closed (org.apache.zookeeper.ZooKeeper)
+[2023-03-02 18:10:54,499] INFO EventThread shut down for session: 0x1000b0ff4280002 (org.apache.zookeeper.ClientCnxn)
+[2023-03-02 18:10:54,500] INFO [ZooKeeperClient Kafka server] Closed. (kafka.zookeeper.ZooKeeperClient)
+[2023-03-02 18:10:54,500] INFO [ThrottledChannelReaper-Fetch]: Shutting down (kafka.server.ClientQuotaManager$ThrottledChannelReaper)
+[2023-03-02 18:10:54,502] INFO [ThrottledChannelReaper-Fetch]: Stopped (kafka.server.ClientQuotaManager$ThrottledChannelReaper)
+[2023-03-02 18:10:54,502] INFO [ThrottledChannelReaper-Fetch]: Shutdown completed (kafka.server.ClientQuotaManager$ThrottledChannelReaper)
+[2023-03-02 18:10:54,502] INFO [ThrottledChannelReaper-Produce]: Shutting down (kafka.server.ClientQuotaManager$ThrottledChannelReaper)
+[2023-03-02 18:10:54,503] INFO [ThrottledChannelReaper-Produce]: Stopped (kafka.server.ClientQuotaManager$ThrottledChannelReaper)
+[2023-03-02 18:10:54,503] INFO [ThrottledChannelReaper-Produce]: Shutdown completed (kafka.server.ClientQuotaManager$ThrottledChannelReaper)
+[2023-03-02 18:10:54,503] INFO [ThrottledChannelReaper-Request]: Shutting down (kafka.server.ClientQuotaManager$ThrottledChannelReaper)
+[2023-03-02 18:10:54,503] INFO [ThrottledChannelReaper-Request]: Stopped (kafka.server.ClientQuotaManager$ThrottledChannelReaper)
+[2023-03-02 18:10:54,503] INFO [ThrottledChannelReaper-Request]: Shutdown completed (kafka.server.ClientQuotaManager$ThrottledChannelReaper)
+[2023-03-02 18:10:54,503] INFO [ThrottledChannelReaper-ControllerMutation]: Shutting down (kafka.server.ClientQuotaManager$ThrottledChannelReaper)
+[2023-03-02 18:10:54,503] INFO [ThrottledChannelReaper-ControllerMutation]: Stopped (kafka.server.ClientQuotaManager$ThrottledChannelReaper)
+[2023-03-02 18:10:54,503] INFO [ThrottledChannelReaper-ControllerMutation]: Shutdown completed (kafka.server.ClientQuotaManager$ThrottledChannelReaper)
+[2023-03-02 18:10:54,504] INFO [SocketServer listenerType=ZK_BROKER, nodeId=0] Shutting down socket server (kafka.network.SocketServer)
+[2023-03-02 18:10:54,523] INFO [SocketServer listenerType=ZK_BROKER, nodeId=0] Shutdown completed (kafka.network.SocketServer)
+[2023-03-02 18:10:54,523] INFO Metrics scheduler closed (org.apache.kafka.common.metrics.Metrics)
+[2023-03-02 18:10:54,523] INFO Closing reporter org.apache.kafka.common.metrics.JmxReporter (org.apache.kafka.common.metrics.Metrics)
+[2023-03-02 18:10:54,523] INFO Metrics reporters closed (org.apache.kafka.common.metrics.Metrics)
+[2023-03-02 18:10:54,525] INFO Broker and topic stats closed (kafka.server.BrokerTopicStats)
+[2023-03-02 18:10:54,525] INFO App info kafka.server for 0 unregistered (org.apache.kafka.common.utils.AppInfoParser)
+[2023-03-02 18:10:54,526] INFO [KafkaServer id=0] shut down completed (kafka.server.KafkaServer)
